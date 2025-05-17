@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="submitFormstyle.css">
+    <meta charset="UTF-8">
+    <title>Quality education</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav>
+        <ul>
+            <li class="logo"><img src="images/P2.png" alt="Logo"></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="profile.html">User Profile</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="team.html">Team</a></li>
+        </ul>
+    </nav>
+
+    <div class="content" id="formSection">
+        <form id="feedbackform"> <!--Implementing the form with input tags and textareas-->
+            <fieldset>
+                <h1><u>Feedback form</u></h1>
+                
+                <label for="Name">*Full name:</label>
+                <input type="text" id="Name" name="Name" placeholder="Enter your name"><br><br>
+
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+                
+                <div>
+                    <label>*Is this your first time visiting?</label><br>
+                    <input type="radio" name="visit" id="yes" value="Yes">
+                    <label for="yes">Yes</label>
+                    
+                    <input type="radio" name="visit" id="no" value="No">
+                    <label for="no">No</label><br><br>
+                </div>  
+
+                <div>
+                    <label>*Was this website informative and easy to navigate through?</label><br>
+                    <input type="radio" name="Info" id="YesInfo" value="Yes">
+                    <label for="YesInfo">Yes</label>
+
+                    <input type="radio" name="Info" id="NoInfo" value="No">
+                    <label for="NoInfo">No</label><br><br>
+                </div>
+
+                <label for="comment">If no, suggest any improvements for the future:</label><br><br>
+                <textarea name="comment" id="comment" cols="60" rows="3" placeholder="Enter your suggestions here"></textarea><br><br>
+
+                <label for="websiteUpdate">Would you like to receive updates about the website and any offers?</label><br>
+                <select name="websiteUpdate" id="websiteUpdate">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select><br><br>
+
+
+                <div>
+                    <label>what Would you rate our website's overall performance?</label><br>
+                    <input type="radio" name="rating" id="Amazing" value="Amazing">
+                    <label for="Amazing">Amazing</label>
+
+                    <input type="radio" name="rating" id="Average" value="Average">
+                    <label for="Average">Average</label>
+
+                    <input type="radio" name="rating" id="Bad" value="GG">
+                    <label for="Bad">Bad</label>
+                </div><br>
+
+                <label for="comment2">Do you have any additional questions or requests?</label><br><br>
+                <textarea name="comment2" id="comment2" cols="60" rows="3"></textarea><br><br>
+                
+                <div id="errorMessage" style="color: red; display: none;"></div>
+
+                <input type="button" name="button" value="Submit" onclick="submitForm()">
+                <button type="button" onclick="previewFeedback()">Preview</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="footer">Developed and designed by <a href="EditorPage.html">Sudeeshwara Sandanayaka</a></div>
+
+    
+    <div id="previewSection" style="display: none;">
+
+        <div id="previewContent">
+                <h2>Preview</h2>
+
+                
+                <p><strong>Full Name:</strong></p>
+                <p><strong>Email:</strong></p>
+                <p><strong>First Time Visiting:</strong></p>
+                <p><strong>Website Was Informative:</strong> </p>
+                <p><strong>Future Improvement:</strong> </p>
+                <p><strong>Website Update:</strong> Yes</p>
+                <p><strong>Rating:</strong></p>
+                <p><strong>Additional Requirements:</strong></p>
+                
+        </div>
+
+        <button type="button" onclick="backToForm()">Back to Form</button>
+    </div>
+
+    
+</body>
+</html>

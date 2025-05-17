@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(315deg, #202125 0%, #11100f 74%);
+    color: #fdfdfd;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+main{
+    padding: 20px;    
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.717);
+    border-radius: 35px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.416);
+    padding: 35px;
+    justify-content: center;
+    width: 40rem;
+    height: 250px;
+    margin: 100px auto;
+    display: flex;
+    line-height: 30px;
+}
+.container1{
+    background-color: rgba(0, 0, 0, 0.717);
+    border-radius: 35px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.416);
+    padding: 35px;
+    justify-content: center;
+    width: 40rem;
+    height: 300px;
+    margin: 100px auto;
+    display: flex;
+    line-height: 30px;
+}
+
+
+section{
+    top: 20px;
+    position: relative;
+}
+
+h2{
+    font-size: 30px;
+    margin-top: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+li strong{
+    width: 100px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.heading{
+    font-size: 45px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.theme{
+    text-align: center;
+    font-weight:Bold;
+    font-size: 35px;
+}
+
+
+.button {
+    background-color: #1E1E1E;
+    color: #ff0808;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 10px auto;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.button:hover {
+    background-color: #dad9e000;
+    transition: all 0.5s ease;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    width: 250px;
+    height: 250px;
+}
+
+.profile img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
